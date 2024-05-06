@@ -1,7 +1,9 @@
 This repository contains a Jupyter notebook for text analysis. The notebook performs various text analysis tasks, including data loading and preprocessing, exploratory data analysis, text vectorization, topic modeling, and sentiment analysis.
 
+
 Overview
 The text_analysis.ipynb notebook uses Python 3.7 and the following libraries:
+
 
 pandas
 numpy
@@ -11,6 +13,7 @@ nltk
 gensim
 sklearn
 The notebook uses a sample dataset of text documents, which is not included in the repository. Users must provide their own dataset in CSV format, with one column containing the text documents and another column containing the document labels.
+
 
 Running the notebook
 To run the text_analysis.ipynb notebook, follow these steps:
@@ -23,10 +26,13 @@ Open the notebook in Jupyter Notebook or Jupyter Lab.
 Run the cells in order, starting from the top.
 Note: Some cells may take a few minutes to run, depending on the size of the dataset and the computational resources available.
 
+
 Data
 The text_analysis.ipynb notebook uses a sample dataset of text documents. The dataset is not included in the notebook and must be provided by the user. The dataset should be in CSV format, with one column containing the text documents and another column containing the document labels.
 
+
 To use your own dataset, replace the data.csv filename in the load_data function with the path to your dataset.
+
 
 Code
 The text_analysis.ipynb notebook contains the following code:
