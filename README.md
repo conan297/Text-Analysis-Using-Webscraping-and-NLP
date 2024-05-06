@@ -1,53 +1,43 @@
-This repository contains a Jupyter notebook for text analysis. The notebook performs various text analysis tasks, including data loading and preprocessing, exploratory data analysis, text vectorization, topic modeling, and sentiment analysis.
+# Web Content Analysis Tool
 
+This project is a web content analysis tool designed to extract and analyze textual data from web pages. It performs various text processing tasks such as sentiment analysis, readability assessment, and word frequency analysis.
 
-Overview
-The text_analysis.ipynb notebook uses Python 3.7 and the following libraries:
+## Introduction
 
+The Web Content Analysis Tool is a Python-based application that retrieves text content from web pages, processes it, and generates insights regarding the text's sentiment, complexity, and other linguistic features. It utilizes techniques from natural language processing (NLP) and text analysis to provide valuable insights into the textual content of web pages.
 
-pandas
-numpy
-matplotlib
-seaborn
-nltk
-gensim
-sklearn
-The notebook uses a sample dataset of text documents, which is not included in the repository. Users must provide their own dataset in CSV format, with one column containing the text documents and another column containing the document labels.
+## Features
 
+- **Web Scraping**: The tool scrapes textual content from web pages using the `requests` and `BeautifulSoup` libraries in Python.
+  
+- **Text Processing**: It preprocesses the extracted text by removing special characters, punctuation, and stopwords using the `nltk` library.
 
-Running the notebook
-To run the text_analysis.ipynb notebook, follow these steps:
+- **Sentiment Analysis**: The tool calculates sentiment scores based on the presence of positive and negative words in the text. It uses a master dictionary of positive and negative words to determine sentiment polarity.
 
-Install the required libraries by running the following command in your terminal or command prompt:
+- **Readability Assessment**: It assesses the readability of the text by calculating metrics such as average sentence length, percentage of complex words, and FOG index.
 
-pip install pandas numpy matplotlib seaborn nltk gensim sklearn
-Download the text_analysis.ipynb notebook and save it to a local directory.
-Open the notebook in Jupyter Notebook or Jupyter Lab.
-Run the cells in order, starting from the top.
-Note: Some cells may take a few minutes to run, depending on the size of the dataset and the computational resources available.
+- **Word Frequency Analysis**: The tool analyzes word frequency and calculates metrics such as average word length and syllables per word.
 
+## Usage
 
-Data
-The text_analysis.ipynb notebook uses a sample dataset of text documents. The dataset is not included in the notebook and must be provided by the user. The dataset should be in CSV format, with one column containing the text documents and another column containing the document labels.
+1. **Input Data**: Provide a list of URLs and corresponding URL IDs in an Excel file named `Input.xlsx`.
+   
+2. **Run the Script**: Execute the Python script `web_content_analysis.py` to scrape web content, process text, and generate analysis results.
+   
+3. **Output Data**: The analysis results are stored in an Excel file named `Output.xlsx`, containing various metrics for each URL ID.
 
+## Setup
 
-To use your own dataset, replace the data.csv filename in the load_data function with the path to your dataset.
+1. **Dependencies**: Install the required Python libraries using `pip install -r requirements.txt`.
 
+2. **Input Data**: Ensure that the input Excel file `Input.xlsx` is correctly formatted with columns for URLs and URL IDs.
 
-Code
-The text_analysis.ipynb notebook contains the following code:
+3. **Execution**: Run the Python script `web_content_analysis.py` to perform web scraping and text analysis.
 
-load_data: Loads the dataset and performs basic preprocessing.
-exploratory_data_analysis: Performs exploratory data analysis on the dataset.
-text_vectorization: Vectorizes the text documents using TF-IDF.
-topic_modeling: Performs topic modeling using Latent Dirichlet Allocation (LDA).
-sentiment_analysis: Performs sentiment analysis using the VADER algorithm.
-Output
-The text_analysis.ipynb notebook produces the following output:
+## Results
 
-Data loading and preprocessing: A preprocessed dataset.
-Exploratory data analysis: Plots and statistics describing the dataset.
-Text vectorization: A matrix of TF-IDF vectors.
-Topic modeling: A list of topics and their corresponding word distributions.
-Sentiment analysis: A sentiment score for each text document.
+The analysis results provide insights into the sentiment, readability, and linguistic characteristics of the text content extracted from web pages. These insights can be valuable for content analysis, SEO optimization, and linguistic research.
 
+## Conclusion
+
+The Web Content Analysis Tool offers a convenient way to extract, process, and analyze textual content from web pages, enabling users to gain valuable insights and make informed decisions based on the analyzed data.
